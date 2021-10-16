@@ -1,0 +1,6 @@
+framework module RCLiveVideoLib {
+  umbrella header "RCLiveVideoLib.h"
+
+  export *
+  module * { export * }
+}
