@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/RCLiveVideoDefine.h</key>
+		<data>
+		sSwRJ7GWIwu0zHC/T2C7eXYU7g8=
+		</data>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<data>
 		2OpSWMuZjoSDAfocZWKyU8lsQiE=
@@ -35,6 +39,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/RCLiveVideoDefine.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sSwRJ7GWIwu0zHC/T2C7eXYU7g8=
+			</data>
+			<key>hash2</key>
+			<data>
+			zwG0HsGYxOh5g9v5gA5O3uNgFiVnZrVdHbVsM8IW29o=
+			</data>
+		</dict>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<dict>
 			<key>hash</key>
