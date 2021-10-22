@@ -9,11 +9,11 @@ RCLiveVideoLib是融云 为用户提供了一套便捷并且安全稳定视频�
 
 推荐使用Pod安装：
 ```
-pod 'RCLiveVideoLib', '~> 0.0.1'
+pod 'RCLiveVideoLib'
 ```
 
 ## 解决方案
 
-[视频直播Demo](https://www.rongcloud.cn/solution/audio_social)
+[开源Demo](https://github.com/rongcloud/rongcloud-scene-ios-demo)
 
-[SDK文档地址](https://docs.rongcloud.cn/v4/5X/views/scene/voiceroom/ios/intro/intro.html)
+[SDK文档](https://docqa-cn.rongcloud.net/livevideoroom/IOS/1.X/guides/intro)

@@ -86,7 +86,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当视频布局发生变化时，更新直播用户的位置
 /// @param frameInfo 直播用户布局信息
 /// 格式为：[userId: frame]，userId：用户id，frame：用户在preview的位置
-- (void)liveVideoUserDidLayout:(NSDictionary<NSString *, NSString *> *)frameInfo;
+- (void)liveVideoUserDidLayout:(NSDictionary<NSString *, NSValue *> *)frameInfo;
 
 /// 房间已关闭
 - (void)roomDidClosed;

@@ -150,6 +150,7 @@ typedef void(^RCLVResultBlock)(RCLiveVideoErrorCode code);
 /// @param type 布局类型
 - (void)setMixType:(RCLiveVideoMixType)type;
 
+
 @end
 
 NS_ASSUME_NONNULL_END
