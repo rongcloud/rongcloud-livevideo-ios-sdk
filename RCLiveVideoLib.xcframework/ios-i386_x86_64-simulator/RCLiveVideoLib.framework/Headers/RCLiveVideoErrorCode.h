@@ -28,6 +28,11 @@ typedef NS_ENUM(NSInteger, RCLiveVideoErrorCode) {
     /// 订阅流失败
     RCLiveVideoSubscribeStreamFailed,
     
+    /// CDN订阅流失败
+    RCLiveVideoSubscribeCDNStreamFailed,
+    /// CDN设置流参数失败
+    RCLiveVideoCDNStreamConfigFailed,
+    
     /// 获取房间信息失败
     RCLiveVideoGetRoomInfoFailed,
     /// 更新房间信息失败

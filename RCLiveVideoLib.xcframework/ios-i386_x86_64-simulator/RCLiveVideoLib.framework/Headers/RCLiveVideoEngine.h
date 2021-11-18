@@ -49,10 +49,30 @@ typedef void(^RCLVResultBlock)(RCLiveVideoErrorCode code);
 /// 观众
 @interface RCLiveVideoEngine (audience)
 
-/// 加入房间，如果没有则创建
+/// 加入房间，观众订阅RTC流
 /// @param roomId 房间id
 /// @param completion 结果回调
-- (void)joinRoom:(nonnull NSString *)roomId completion:(nullable RCLVResultBlock)completion;
+- (void)joinRoom:(nonnull NSString *)roomId
+      completion:(nullable RCLVResultBlock)completion;
+
+/// 加入房间，观众订阅CDN流
+/// 默认视频大小：1280X720
+/// 默认FPS：15
+/// @param roomId 房间id
+/// @param completion 结果回调
+- (void)joinCDNRoom:(nonnull NSString *)roomId
+         completion:(nullable RCLVResultBlock)completion;
+
+/// 加入房间，观众订阅CDN流
+/// 如果videoSizePreset或fps大于视频流的最大值，则使用最大值
+/// @param roomId 房间id
+/// @param videoSizePreset 视频大小
+/// @param fps 视频帧率
+/// @param completion 结果回调
+- (void)joinCDNRoom:(nonnull NSString *)roomId
+    videoSizePreset:(RCRTCVideoSizePreset)videoSizePreset
+                FPS:(RCRTCVideoFPS)FPS
+         completion:(nullable RCLVResultBlock)completion;
 
 /// 离开房间
 /// @param completion 结果回调
