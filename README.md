@@ -16,4 +16,4 @@ pod 'RCLiveVideoLib'
 
 [开源Demo](https://github.com/rongcloud/rongcloud-scene-ios-demo)
 
-[SDK文档](https://docqa-cn.rongcloud.net/livevideoroom/IOS/1.X/guides/intro)
+[SDK文档](https://doc.rongcloud.cn/livevideoroom/IOS/2.X/guides/intro)

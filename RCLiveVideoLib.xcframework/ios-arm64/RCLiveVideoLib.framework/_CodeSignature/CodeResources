@@ -4,25 +4,29 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/RCLiveVideoCode.h</key>
+		<data>
+		F0vMpcMOxhcDDmz7oviLpy6tJE4=
+		</data>
 		<key>Headers/RCLiveVideoDefine.h</key>
 		<data>
-		sSwRJ7GWIwu0zHC/T2C7eXYU7g8=
+		RB6dHRclL4QEDvdb+hftdPXRTaM=
 		</data>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<data>
-		lKEwUOUwekDLreyPoEldi2oAeYQ=
+		v3PHjZXxHE5wJCdKKLuZFMLqiBI=
 		</data>
 		<key>Headers/RCLiveVideoEngine.h</key>
 		<data>
-		nOXjWNQfP8BFP3RvvcI2WBvNfEk=
-		</data>
-		<key>Headers/RCLiveVideoErrorCode.h</key>
-		<data>
-		75qDTE9bUJ6nR68nkxk3OdYrFwo=
+		UeoIp/rU1pCQyQ6K6rL8p7DitA4=
 		</data>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<data>
-		Mpf95Oanf8K3/W4CXbOlro7mRl0=
+		oVhRdIHxfy+/0egtegpJH2AAUz4=
+		</data>
+		<key>Headers/RCLiveVideoSeat.h</key>
+		<data>
+		n+Uwd+onXfTiwmIRY3m6i43XZcE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,59 +39,70 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/RCLiveVideoCode.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F0vMpcMOxhcDDmz7oviLpy6tJE4=
+			</data>
+			<key>hash2</key>
+			<data>
+			s1e7RXFPDGihWD8xff9pjw4Y02v+MAs5eXRQGBy7VyE=
+			</data>
+		</dict>
 		<key>Headers/RCLiveVideoDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sSwRJ7GWIwu0zHC/T2C7eXYU7g8=
+			RB6dHRclL4QEDvdb+hftdPXRTaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zwG0HsGYxOh5g9v5gA5O3uNgFiVnZrVdHbVsM8IW29o=
+			BsnsRD9HD0LVy3DQZBV1ZsVkdYZn5B1ULh0rgwIEiL8=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lKEwUOUwekDLreyPoEldi2oAeYQ=
+			v3PHjZXxHE5wJCdKKLuZFMLqiBI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oh07YTmrNHd2g3dzbQdLS7S6ttYmecPCEuLgEyoxfBs=
+			4xx/V+1PNORXHdBL0g0MFrsBPFkZiHArNVlDj6rheMw=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoEngine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nOXjWNQfP8BFP3RvvcI2WBvNfEk=
+			UeoIp/rU1pCQyQ6K6rL8p7DitA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ugYQoLCE4PgNynQ0PrpSqVUk0jzuKpgSkiu2XmMJhi8=
-			</data>
-		</dict>
-		<key>Headers/RCLiveVideoErrorCode.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			75qDTE9bUJ6nR68nkxk3OdYrFwo=
-			</data>
-			<key>hash2</key>
-			<data>
-			jXDmimO/gRyAks10Z0AvPmGmDvOvSA7vNQ25QEck6S8=
+			CywzimqZ5cI/JcVLlXylKQcLsWTQTn25HqaUWJcnbyE=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mpf95Oanf8K3/W4CXbOlro7mRl0=
+			oVhRdIHxfy+/0egtegpJH2AAUz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WsnKvw8xEEDCyfgdUVOmJArhU4OlaPwHvAHacomraSs=
+			IX+7XV2i350eRf14qWbxRtpS/xEs8eyDt0yA9t4jkVM=
+			</data>
+		</dict>
+		<key>Headers/RCLiveVideoSeat.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n+Uwd+onXfTiwmIRY3m6i43XZcE=
+			</data>
+			<key>hash2</key>
+			<data>
+			9ltMh4QhU6lyz9TDWwNewoRMHbhsfFvQ7hUPmKWcEr8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

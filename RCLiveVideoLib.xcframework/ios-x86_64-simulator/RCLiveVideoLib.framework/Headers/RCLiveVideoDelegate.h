@@ -6,8 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVFoundation.h>
-#import "RCLiveVideoErrorCode.h"
+#import <CoreMedia/CMSampleBuffer.h>
+
+#import "RCLiveVideoDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,17 +26,17 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)roomInfoDidUpdate:(NSString *)key value:(NSString *)value;
 
 /// @param userId 用户进入房间
-- (void)userDidEnter:(NSString *)userId;
+- (void)userDidEnter:(NSString *)userId withUserCount:(NSInteger)count;
 
 /// @param userId 用户离开房间
-- (void)userDidExit:(NSString *)userId;
+- (void)userDidExit:(NSString *)userId withUserCount:(NSInteger)count;
 
 /// @param userId 用户被踢出房间
 - (void)userDidKickOut:(NSString *)userId byOperator:(NSString *)operatorId;
 
 /// 房间连麦用户更新：用户上麦、下麦等
 /// @param userIds 连麦的用户
-- (void)liveVideoDidUpdate:(NSArray<NSString *> *)userIds;
+- (void)liveVideoUserDidUpdate:(NSArray<NSString *> *)userIds;
 
 /// 上麦申请列表发生变化
 - (void)liveVideoRequestDidChange;
@@ -47,22 +48,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)liveVideoRequestDidReject;
 
 /// 接收到上麦邀请：只有受邀请者收到回调
-- (void)liveVideoInvitationDidReceive;
+- (void)liveVideoInvitationDidReceive:(NSString *)inviter atIndex:(NSInteger)index;
 
 /// 邀请上麦已被取消：只有受邀请者收到回调
 - (void)liveVideoInvitationDidCancel;
 
 /// 邀请上麦被同意
-- (void)liveVideoInvitationDidAccept:(NSString *)userId;
+- (void)liveVideoInvitationDidAccept:(NSString *)invitee;
 
 /// 邀请上麦被拒绝
-- (void)liveVideoInvitationDidReject:(NSString *)userId;
+- (void)liveVideoInvitationDidReject:(NSString *)invitee;
 
 /// 直播连麦开始，通过申请、邀请等方式成功上麦后，接收回调。
-- (void)liveVideoDidBegin:(RCLiveVideoErrorCode)code;
+- (void)liveVideoDidBegin:(RCLiveVideoCode)code;
 
 /// 直播连麦结束
-- (void)liveVideoDidFinish;
+- (void)liveVideoDidFinish:(RCLivevideoFinishReason)reason;
 
 /// 收到消息
 /// @param message 消息
@@ -76,20 +77,34 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param sampleBuffer 视频流采样数据
 - (nullable CMSampleBufferRef)didOutputSampleBuffer:(nullable CMSampleBufferRef)sampleBuffer;
 
-/// 合流视频点击事件，点击直播用户时触发
-/// 注意：
-/// 请确保在布局preview时，可点击用户的视图不被遮挡。
-/// 如果preview被遮挡，请使用didLiveVideoLayout自定义事件点击视图
-/// @param userId 被点击的用户id
-- (void)liveVideoUserDidClick:(NSString *)userId;
-
-/// 当视频布局发生变化时，更新直播用户的位置
-/// @param frameInfo 直播用户布局信息
-/// 格式为：[userId: frame]，userId：用户id，frame：用户在preview的位置
-- (void)liveVideoUserDidLayout:(NSDictionary<NSString *, NSValue *> *)frameInfo;
-
 /// 房间已关闭
 - (void)roomDidClosed;
+
+/// 视频连麦模式发生变化
+/// @param mixType 连麦类型
+- (void)roomMixTypeDidChange:(RCLiveVideoMixType)mixType;
+
+@end
+
+@protocol RCLiveVideoMixDataSource <NSObject>
+
+@optional
+
+/// 合流画布尺寸，使用 RCLiveVideoMixTypeCustom 模式时，必须实现！！！
+- (CGSize)liveVideoPreviewSize;
+
+/// 连麦布局对应的麦位位置数组：Array<CGRect>，使用 RCLiveVideoMixTypeCustom 模式时，必须实现！！！
+- (NSArray<NSValue *> *)liveVideoFrames;
+
+@end
+
+@class RCLiveVideoSeat;
+@protocol RCLiveVideoMixDelegate <NSObject>
+
+/// 自定义麦位视图
+/// @param seat 麦位对象
+/// @param frame 麦位在 previewView 中的位置
+- (void)liveVideoDidLayout:(RCLiveVideoSeat *)seat withFrame:(CGRect)frame;
 
 @end
 

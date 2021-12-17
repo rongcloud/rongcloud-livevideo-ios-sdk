@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "RCLiveVideoLib"
-    s.version      = "1.0.1"
+    s.version      = "2.0.0"
     s.summary      = 'live video'
 
 
@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
 
 
     s.homepage     = "https://www.rongcloud.cn/"
-    s.license      = { :type => 'MIT', :file => 'LICENSE' }
     s.author       = { "shaoshuai" => "https://www.rongcloud.cn/" }
     s.social_media_url   = "https://www.rongcloud.cn/"
     s.source       = { :git => 'https://github.com/rongcloud/rongcloud-livevideo-ios-sdk.git', :tag => s.version.to_s }
@@ -21,7 +20,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.static_framework = true
     
-    s.ios.deployment_target = '9.0'
+    s.ios.deployment_target = '11.0'
   
     s.pod_target_xcconfig = {
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
@@ -31,8 +30,8 @@ Pod::Spec.new do |s|
 
     s.vendored_frameworks = 'RCLiveVideoLib.xcframework'
 
-    s.dependency 'RongCloudRTC/RongRTCLib', '~> 5.1.9'
-    s.dependency 'RongCloudIM/IMLib', '~> 5.1.5'
+    s.dependency 'RongCloudRTC/RongRTCLib', '5.1.13'
+    s.dependency 'RongCloudIM/IMLib', '~> 5.1.7'
 
 end
 
