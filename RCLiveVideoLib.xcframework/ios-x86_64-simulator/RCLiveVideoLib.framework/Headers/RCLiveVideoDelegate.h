@@ -96,6 +96,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 连麦布局对应的麦位位置数组：Array<CGRect>，使用 RCLiveVideoMixTypeCustom 模式时，必须实现！！！
 - (NSArray<NSValue *> *)liveVideoFrames;
 
+/// 合流帧率
+- (NSInteger)fps;
+
+/// 合流码率
+- (NSInteger)bitrate;
+
 @end
 
 @class RCLiveVideoSeat;
