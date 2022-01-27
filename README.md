@@ -10,6 +10,8 @@ RCLiveVideoLib是融云 为用户提供了一套便捷并且安全稳定视频�
 推荐使用Pod安装：
 ```
 pod 'RCLiveVideoLib'
+# 如果您使用融云 CDN 服务，请添加 RongRTCPlayer 库
+pod 'RongCloudRTC/RongRTCPlayer'
 ```
 
 ## 解决方案
