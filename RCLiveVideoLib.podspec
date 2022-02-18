@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "RCLiveVideoLib"
-    s.version      = "2.0.2"
+    s.version      = "2.0.3"
     s.summary      = 'live video'
 
 
@@ -25,13 +25,13 @@ Pod::Spec.new do |s|
   
     s.pod_target_xcconfig = {
         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-        'VALID_ARCHS' => 'arm64 x86_64 armv7',
+        'VALID_ARCHS' => 'arm64 x86_64',
         'ENABLE_BITCODE' => 'NO'
     }
 
     s.vendored_frameworks = 'RCLiveVideoLib.xcframework'
 
-    s.dependency 'RongCloudRTC/RongRTCLib', '5.1.13'
+    s.dependency 'RongCloudRTC/RongRTCLib', '~> 5.1.13'
     s.dependency 'RongCloudIM/IMLib', '~> 5.1.7'
 
 end
