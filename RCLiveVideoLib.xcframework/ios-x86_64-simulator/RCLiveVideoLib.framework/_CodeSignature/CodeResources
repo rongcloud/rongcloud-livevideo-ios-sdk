@@ -4,29 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/RCLiveVideoCode.h</key>
-		<data>
-		F0vMpcMOxhcDDmz7oviLpy6tJE4=
-		</data>
-		<key>Headers/RCLiveVideoDefine.h</key>
-		<data>
-		RB6dHRclL4QEDvdb+hftdPXRTaM=
-		</data>
-		<key>Headers/RCLiveVideoDelegate.h</key>
-		<data>
-		USN9gjKMa9q+q2XI6JbQIr2GpVk=
-		</data>
-		<key>Headers/RCLiveVideoEngine.h</key>
-		<data>
-		UeoIp/rU1pCQyQ6K6rL8p7DitA4=
-		</data>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<data>
 		oVhRdIHxfy+/0egtegpJH2AAUz4=
-		</data>
-		<key>Headers/RCLiveVideoSeat.h</key>
-		<data>
-		n+Uwd+onXfTiwmIRY3m6i43XZcE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,50 +19,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/RCLiveVideoCode.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			F0vMpcMOxhcDDmz7oviLpy6tJE4=
-			</data>
-			<key>hash2</key>
-			<data>
-			s1e7RXFPDGihWD8xff9pjw4Y02v+MAs5eXRQGBy7VyE=
-			</data>
-		</dict>
-		<key>Headers/RCLiveVideoDefine.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RB6dHRclL4QEDvdb+hftdPXRTaM=
-			</data>
-			<key>hash2</key>
-			<data>
-			BsnsRD9HD0LVy3DQZBV1ZsVkdYZn5B1ULh0rgwIEiL8=
-			</data>
-		</dict>
-		<key>Headers/RCLiveVideoDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			USN9gjKMa9q+q2XI6JbQIr2GpVk=
-			</data>
-			<key>hash2</key>
-			<data>
-			fscgfeH4H8dORkh0beVO1Xny5gsccIrD1aX+2BCA3lg=
-			</data>
-		</dict>
-		<key>Headers/RCLiveVideoEngine.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UeoIp/rU1pCQyQ6K6rL8p7DitA4=
-			</data>
-			<key>hash2</key>
-			<data>
-			CywzimqZ5cI/JcVLlXylKQcLsWTQTn25HqaUWJcnbyE=
-			</data>
-		</dict>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<dict>
 			<key>hash</key>
@@ -92,17 +28,6 @@
 			<key>hash2</key>
 			<data>
 			IX+7XV2i350eRf14qWbxRtpS/xEs8eyDt0yA9t4jkVM=
-			</data>
-		</dict>
-		<key>Headers/RCLiveVideoSeat.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n+Uwd+onXfTiwmIRY3m6i43XZcE=
-			</data>
-			<key>hash2</key>
-			<data>
-			9ltMh4QhU6lyz9TDWwNewoRMHbhsfFvQ7hUPmKWcEr8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
