@@ -37,6 +37,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param completion 结果回调
 - (void)begin:(NSString *)roomId completion:(nonnull RCLVResult)completion;
 
+/// 结束直播
+/// @param completion 结果回调
+- (void)finish:(nonnull RCLVResult)completion DEPRECATED_MSG_ATTRIBUTE("use leaveRoom: API instead");
+
 /// 观众加入房间，默认订阅 MCU 流
 /// @param roomId 房间id
 /// @param completion 结果回调
