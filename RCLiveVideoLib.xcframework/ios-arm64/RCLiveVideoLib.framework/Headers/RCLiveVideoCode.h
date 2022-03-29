@@ -43,8 +43,12 @@ typedef NS_ENUM(NSInteger, RCLiveVideoCode) {
     
     /// 加入连麦失败
     RCLiveVideoLinkMicJoinError = 80401,
+    /// 离开连麦失败
+    RCLiveVideoLinkMicLeaveError = 80402,
     /// 连麦状态错误
     RCLiveVideoLinkMicStateError = 80403,
+    /// 角色切换失败，已被踢出房间
+    RCLiveVideoLinkMicKickError = 80404,
     
     /// 申请连麦失败
     RCLiveVideoLinkMicRequestError = 80411,

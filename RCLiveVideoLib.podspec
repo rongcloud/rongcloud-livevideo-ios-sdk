@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "RCLiveVideoLib"
-    s.version      = "2.1.0.2"
+    s.version      = "2.1.0.4"
     s.summary      = 'live video'
 
 
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'RCLiveVideoLib.xcframework'
 
     s.dependency 'RongCloudRTC/RongRTCLib', '~> 5.1.16.1'
-    s.dependency 'RongCloudIM/IMLib', '~> 5.1.7'
+    s.dependency 'RongCloudIM/IMLib', '~> 5.1.8'
 
 end
 

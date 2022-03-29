@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class RCMessage;
+@class RCMessage, RCRTCMixConfig;
 @protocol RCLiveVideoDelegate <NSObject>
 
 @optional
@@ -152,6 +152,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param seat 麦位对象
 /// @param frame 麦位在 previewView 中的位置
 - (void)liveVideoDidLayout:(RCLiveVideoSeat *)seat withFrame:(CGRect)frame;
+
+/// 合流布局配置将要更新
+/// 开发者可以在此修改合流配置：
+/// 视频：帧率、码率、背景等
+/// 音频：码率等
+/// @param config 配置对象
+- (void)roomMixConfigWillUpdate:(RCRTCMixConfig *)config;
 
 @end
 
