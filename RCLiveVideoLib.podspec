@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
         s.license      = { :type => "Copyright", :text => "Copyright 2022 RongCloud" }
     s.author       = { "shaoshuai" => "https://www.rongcloud.cn/" }
     s.social_media_url   = "https://www.rongcloud.cn/"
-    s.source       = { :git => 'https://github.com/asunrong/rongcloud-livevideo-ios-sdk.git', :tag => s.version.to_s }
+    s.source       = { :git => 'https://github.com/rongcloud/rongcloud-livevideo-ios-sdk.git', :tag => s.version.to_s }
     
     s.requires_arc = true
     s.static_framework = true
@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
 
     # RCLiveVideoLib.xcframework/ios-arm64/RCLiveVideoLib.framework/Headers
     s.source_files = 'RCLiveVideoLib.xcframework/ios-arm64/RCLiveVideoLib.framework/Headers/**.h'
+    # 给FW添加Headr到XCode展示
     s.public_header_files = "#{s.name}.xcframework/ios-arm64/#{s.name}.framework/Headers/**.h"
 
     s.dependency 'RongCloudRTC/RongRTCLib'
