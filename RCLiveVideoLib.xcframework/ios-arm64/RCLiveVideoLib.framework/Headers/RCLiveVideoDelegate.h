@@ -81,6 +81,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param frame 视频帧数据
 - (RCRTCVideoFrame *)didOutputFrame:(RCRTCVideoFrame *)frame;
 
+/*!
+ 订阅远端资源成功后, 音频或视频首帧到达通知
+ 
+ @param stream 开始接收数据的 stream
+ @param mediaType 数据流类型（如视频流、音频流）
+ @discussion
+ 数据流第一个关键帧到达
+ 
+ @remarks 代理
+ */
+- (void)didReportFirstFrame:(RCRTCInputStream *)stream mediaType:(RCRTCMediaType)mediaType;
+
 /// 房间已关闭
 - (void)roomDidClosed;
 
