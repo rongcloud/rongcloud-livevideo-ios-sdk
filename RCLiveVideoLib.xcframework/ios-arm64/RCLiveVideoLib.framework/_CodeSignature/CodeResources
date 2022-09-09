@@ -6,19 +6,27 @@
 	<dict>
 		<key>Headers/RCLiveVideoCode.h</key>
 		<data>
-		7EUQKYswuDOyRnhVIj3uT4V2qj4=
+		BKAJx84cWMArhjVbKDQwCKb0vUI=
 		</data>
 		<key>Headers/RCLiveVideoDefine.h</key>
 		<data>
-		jVe1T+ZqoDME6IggzV/NYpAn/h4=
+		CFERn8sjAuBQaN4H0z34LKS0SDg=
 		</data>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<data>
-		9ikS4h8YKBQJMm14+LjynJivUBM=
+		krvvSQSiAY7hZd0J3+msa0mTufI=
+		</data>
+		<key>Headers/RCLiveVideoDeprecatedDelegate.h</key>
+		<data>
+		My5poYkFIERg6RPoZr6LOKXl9yE=
+		</data>
+		<key>Headers/RCLiveVideoEngine+Deprecated.h</key>
+		<data>
+		/7cE+kU7469jv+ICHJSP8ppHSsM=
 		</data>
 		<key>Headers/RCLiveVideoEngine.h</key>
 		<data>
-		tsJsVkNcRAm2UORja20Bs1g1elM=
+		xKLjjbIn3zr9m4UPdruGMfxulOk=
 		</data>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<data>
@@ -34,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ck9u6fUrE/oPfWzdlFHQ2qAIqic=
+		jmvtdBpcrC7hoQcPWiQfTQ+L2r4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,44 +59,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7EUQKYswuDOyRnhVIj3uT4V2qj4=
+			BKAJx84cWMArhjVbKDQwCKb0vUI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IzOogMD+2/VYCRsk2544cHFbJKcmC49WpJqseprtfHc=
+			49El2G2evQirluQ4wJbAIDzuYL4HTA8Wou+IaNZqiaM=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jVe1T+ZqoDME6IggzV/NYpAn/h4=
+			CFERn8sjAuBQaN4H0z34LKS0SDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			l5ddk3hrO+t+HyZObEvw/fNkvGK/T4w6zb+//WQBMb0=
+			soZnaKgMIREPIO3gLaw/agW55IyWoFVhdVIDkcsdX8M=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9ikS4h8YKBQJMm14+LjynJivUBM=
+			krvvSQSiAY7hZd0J3+msa0mTufI=
 			</data>
 			<key>hash2</key>
 			<data>
-			wJPwyNZn4LLN5NDJYu8dV0bSBjskvbtoncoCiTWF9R8=
+			gJuCoukGWwnYyxbyBMh3rfCpAeYOqegp99kz7Y2MuS8=
+			</data>
+		</dict>
+		<key>Headers/RCLiveVideoDeprecatedDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			My5poYkFIERg6RPoZr6LOKXl9yE=
+			</data>
+			<key>hash2</key>
+			<data>
+			witq9+Wbj9rNs5cEw2K5R1QagmG/FSnJNB2bvu/HO1E=
+			</data>
+		</dict>
+		<key>Headers/RCLiveVideoEngine+Deprecated.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/7cE+kU7469jv+ICHJSP8ppHSsM=
+			</data>
+			<key>hash2</key>
+			<data>
+			GPE6t8+QZhA1jnryY9w9dKUizOquT7J/jCTcBh+dp3o=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoEngine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tsJsVkNcRAm2UORja20Bs1g1elM=
+			xKLjjbIn3zr9m4UPdruGMfxulOk=
 			</data>
 			<key>hash2</key>
 			<data>
-			HReMmRsEQHugtkC+2S87NHuhAzi2uQzGT66pp6uxSaE=
+			PewxIa629elbDgImzKetvIJ6hObCmPsLXOjXrvushE8=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoLib.h</key>

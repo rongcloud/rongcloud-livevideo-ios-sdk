@@ -3,13 +3,11 @@ Pod::Spec.new do |s|
 
 
     s.name         = "RCLiveVideoLib"
-    s.version      = "2.1.0.8"
+    s.version      = "2.1.1"
     s.summary      = 'live video'
 
 
-    s.description  = <<-DESC
-                        live video dependency IM & RTC
-                        DESC
+    s.description  = 'live video dependency IM & RTC'
 
 
     s.homepage     = "https://www.rongcloud.cn/"
@@ -37,7 +35,7 @@ Pod::Spec.new do |s|
     # 给FW添加Headr到XCode展示
     s.public_header_files = "#{s.name}.xcframework/ios-arm64/#{s.name}.framework/Headers/**.h"
     
-    s.dependency 'RongCloudIM/IMLib'
+    s.dependency 'RongCloudIM/ChatRoom'
     s.dependency 'RongCloudRTC/RongRTCLib'
 
 end

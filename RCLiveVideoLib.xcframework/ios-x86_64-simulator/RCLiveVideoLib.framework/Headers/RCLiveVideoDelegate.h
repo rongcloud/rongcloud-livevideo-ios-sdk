@@ -5,15 +5,14 @@
 //  Created by 叶孤城 on 2021/9/3.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreMedia/CMSampleBuffer.h>
-
+#import "RCSProtocol.h"
 #import "RCLiveVideoDefine.h"
+#import "RCLiveVideoDeprecatedDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class RCMessage, RCRTCMixConfig;
-@protocol RCLiveVideoDelegate <NSObject>
+@protocol RCLiveVideoDelegate <RCSProtocol, RCLiveVideoDeprecatedDelegate>
 
 @optional
 
@@ -73,10 +72,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param delay 延迟时间:ms
 - (void)network:(NSInteger)delay;
 
-/// 视频输出回调，可以在此接口做视频流二次开发，例如：美颜。
-/// @param sampleBuffer 视频流采样数据
-- (nullable CMSampleBufferRef)didOutputSampleBuffer:(nullable CMSampleBufferRef)sampleBuffer DEPRECATED_MSG_ATTRIBUTE("use didOutputFrame: instead");
-
 /// 视频流输出回调，可以在此接口做视频流二次开发，例如：美颜。
 /// @param frame 视频帧数据
 - (RCRTCVideoFrame *)didOutputFrame:(RCRTCVideoFrame *)frame;
@@ -102,7 +97,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol RCLiveVideoPKDelegate <NSObject>
+@protocol RCLiveVideoPKDelegate <RCSProtocol>
 
 @optional
 
@@ -139,7 +134,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol RCLiveVideoMixDataSource <NSObject>
+@protocol RCLiveVideoMixDataSource <RCSProtocol>
 
 @optional
 
@@ -158,7 +153,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @class RCLiveVideoSeat;
-@protocol RCLiveVideoMixDelegate <NSObject>
+@protocol RCLiveVideoMixDelegate <RCSProtocol>
 
 /// 自定义麦位视图
 /// @param seat 麦位对象
@@ -171,6 +166,30 @@ NS_ASSUME_NONNULL_BEGIN
 /// 音频：码率等
 /// @param config 配置对象
 - (void)roomMixConfigWillUpdate:(RCRTCMixConfig *)config;
+
+@end
+
+@protocol RCSLivePlayer;
+
+@protocol RCSCDNDataSource <RCSProtocol>
+
+@required
+
+/// 观众订阅的流的类型
+/// 详细类型 RCSLiveType
+- (RCSLiveType)liveType;
+
+@optional
+
+/// 内置 CDN 配置
+/// 自定义内置 CDN 帧率
+- (RCRTCVideoFPS)innerCDNFPS;
+/// 自定义内置 CDN 分辨率
+- (RCRTCVideoSizePreset)innerCDNPreset;
+
+/// 三方 CDN 配置
+/// 三方 CDN 播放器
+- (UIView<RCSLivePlayer> *)thirdCDNPlayer;
 
 @end
 

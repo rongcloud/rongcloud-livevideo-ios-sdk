@@ -35,35 +35,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 房主开始或恢复直播
 /// @param roomId 房间 id
 /// @param completion 结果回调
-- (void)begin:(NSString *)roomId completion:(nonnull RCLVResult)completion;
-
-/// 结束直播
-/// @param completion 结果回调
-- (void)finish:(nonnull RCLVResult)completion DEPRECATED_MSG_ATTRIBUTE("use leaveRoom: API instead");
+- (void)begin:(nonnull NSString *)roomId
+   completion:(nonnull RCLVResult)completion;
 
 /// 观众加入房间，默认订阅 MCU 流
 /// @param roomId 房间id
 /// @param completion 结果回调
 - (void)joinRoom:(nonnull NSString *)roomId
       completion:(nonnull RCLVResult)completion;
-
-/// 观众加入房间，订阅 CDN 流
-/// @param roomId 房间 id
-/// @param completion 结果回调
-- (void)joinCDNRoom:(nonnull NSString *)roomId
-         completion:(nonnull RCLVResult)completion;
-
-/// 观众加入房间，订阅CDN流
-/// 如果videoSizePreset或fps大于视频流的最大值，则使用最大值
-/// @param roomId 房间id
-/// @param videoSizePreset 视频大小
-/// @param FPS 视频帧率
-/// @param completion 结果回调
-/// 注意：如果使用该接口，请提客户工单，进行后台配置
-- (void)joinCDNRoom:(nonnull NSString *)roomId
-    videoSizePreset:(RCRTCVideoSizePreset)videoSizePreset
-                FPS:(RCRTCVideoFPS)FPS
-         completion:(nonnull RCLVResult)completion;
 
 /// 离开房间
 /// @param completion 结果回调
@@ -236,6 +215,28 @@ NS_ASSUME_NONNULL_BEGIN
 /// 退出PK
 /// @param completion 结果回调
 - (void)quitPK:(nullable RCLVResult)completion;
+
+@end
+
+@protocol RCSCDNDataSource;
+
+@interface RCLiveVideoEngine (CDN)
+
+/// 增加自定义推送地址
+/// @param path 推送地址
+/// @param completion 结果回调
+- (void)addThirdCDN:(NSString *)path
+         completion:(RCLVResult)completion;
+
+/// 移除自定义推送地址
+/// @param path 推送地址
+/// @param completion 结果回调
+- (void)removeThirdCDN:(NSString *)path
+            completion:(RCLVResult)completion;
+
+/// 设置 CDN 配置信息
+/// @param dataSource 配置
+- (void)setCDNDataSource:(id<RCSCDNDataSource>)dataSource;
 
 @end
 

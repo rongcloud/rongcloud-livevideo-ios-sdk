@@ -82,6 +82,9 @@ typedef NS_ENUM(NSInteger, RCLiveVideoCode) {
     
     /// 权限错误
     RCLiveVideoPermissionError = 82001,
+    
+    /// 参数错误
+    RCLiveVideoParameterError = 83001,
 };
 
 #endif /* RCLiveVideoCode_h */
