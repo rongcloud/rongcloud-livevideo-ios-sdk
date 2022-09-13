@@ -40,9 +40,17 @@
 		<data>
 		n+Uwd+onXfTiwmIRY3m6i43XZcE=
 		</data>
+		<key>Headers/RCSLivePlayer.h</key>
+		<data>
+		PBI+m10Pipk3TVycHdEtoMq9LhQ=
+		</data>
+		<key>Headers/RCSProtocol.h</key>
+		<data>
+		ihxdZ3QEHAnEhHAoZyfhCCSUL8Q=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		1xzb+Tzqhjwx+HGVbVfyWsujomM=
+		IHFGVJe8so2wOWwi7ObVIroDzmo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,6 +160,28 @@
 			<key>hash2</key>
 			<data>
 			9ltMh4QhU6lyz9TDWwNewoRMHbhsfFvQ7hUPmKWcEr8=
+			</data>
+		</dict>
+		<key>Headers/RCSLivePlayer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PBI+m10Pipk3TVycHdEtoMq9LhQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			AX5tXy5UiMSwskNW/Sb+CmADsZA9Lrpdvyt0DHHWoDE=
+			</data>
+		</dict>
+		<key>Headers/RCSProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ihxdZ3QEHAnEhHAoZyfhCCSUL8Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			AWzQp8OZaE1bXLKP7idP69QRApysZhl+C+tpQUodATA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
