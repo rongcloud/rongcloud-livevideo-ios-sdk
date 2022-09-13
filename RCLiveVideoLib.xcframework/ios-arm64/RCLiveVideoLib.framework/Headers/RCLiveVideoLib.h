@@ -9,6 +9,8 @@
 #ifndef RCLiveVideoLib_h
 #define RCLiveVideoLib_h
 
+#import <RCLiveVideoLib/RCSProtocol.h>
+#import <RCLiveVideoLib/RCSLivePlayer.h>
 #import <RCLiveVideoLib/RCLiveVideoPK.h>
 #import <RCLiveVideoLib/RCLiveVideoCode.h>
 #import <RCLiveVideoLib/RCLiveVideoSeat.h>
