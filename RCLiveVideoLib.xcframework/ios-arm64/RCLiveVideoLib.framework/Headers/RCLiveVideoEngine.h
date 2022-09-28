@@ -222,6 +222,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RCLiveVideoEngine (CDN)
 
+/// 开始或恢复直播，并制定三方 CDN 推流地址
+/// @param roomId 房间 id
+/// @param completion 结果回调
+- (void)begin:(nonnull NSString *)roomId
+   publishURL:(nonnull NSString *)publishURL
+   completion:(nonnull RCLVResult)completion;
+
 /// 增加自定义推送地址
 /// @param path 推送地址
 /// @param completion 结果回调

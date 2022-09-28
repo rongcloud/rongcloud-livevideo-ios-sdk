@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/RCLiveVideoEngine.h</key>
 		<data>
-		xKLjjbIn3zr9m4UPdruGMfxulOk=
+		idTLfirdWxFiiv2adHzS8yybVZ4=
 		</data>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<data>
-		uG2NgHHdjcAAuNTodXJ3Cvx8xpQ=
+		pCM4BG8esnEixMVutJIih03vJzE=
 		</data>
 		<key>Headers/RCLiveVideoPK.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MV73/N3Tu8mFLIK5A35pvUhL/aY=
+		gGbNbdtv5prVREAWqC00cSMr30U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,22 +122,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xKLjjbIn3zr9m4UPdruGMfxulOk=
+			idTLfirdWxFiiv2adHzS8yybVZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			PewxIa629elbDgImzKetvIJ6hObCmPsLXOjXrvushE8=
+			s/cMF1Sw3kCW4CgZFCawzCh5UOATm4XAHgIihpbLDA0=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uG2NgHHdjcAAuNTodXJ3Cvx8xpQ=
+			pCM4BG8esnEixMVutJIih03vJzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			F3r7zimdgzHu9nrQPyMOi7GLKt8mG4gx2lcSUDZEmic=
+			oztWHtuBI6Tyn9jsNQcvyKjUSDdNA8pFU0r+waN+Wkg=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoPK.h</key>

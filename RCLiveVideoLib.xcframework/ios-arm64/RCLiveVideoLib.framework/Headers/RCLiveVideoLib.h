@@ -18,4 +18,6 @@
 #import <RCLiveVideoLib/RCLiveVideoDefine.h>
 #import <RCLiveVideoLib/RCLiveVideoDelegate.h>
 
+#import <RCLiveVideoLib/RCLiveVideoEngine+Deprecated.h>
+
 #endif /* RCLiveVideoLib_h */
