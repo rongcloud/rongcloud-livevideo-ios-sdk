@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/RCLiveVideoDelegate.h</key>
 		<data>
-		krvvSQSiAY7hZd0J3+msa0mTufI=
+		0pFZNsaDb2I0kxt/g15TR0TWs0M=
 		</data>
 		<key>Headers/RCLiveVideoDeprecatedDelegate.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CGNQbvyytiNmbWiRsd03ZBGnJM4=
+		9CtMBbkjYj1nLFIWQ8AZ4F3c+tU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,11 +97,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			krvvSQSiAY7hZd0J3+msa0mTufI=
+			0pFZNsaDb2I0kxt/g15TR0TWs0M=
 			</data>
 			<key>hash2</key>
 			<data>
-			gJuCoukGWwnYyxbyBMh3rfCpAeYOqegp99kz7Y2MuS8=
+			1DTcm3ySL523Vp5HhYCVwslz31zvcW+LVq0D1pnqFWc=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoDeprecatedDelegate.h</key>

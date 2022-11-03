@@ -8,6 +8,7 @@
 #import "RCSProtocol.h"
 #import "RCLiveVideoDefine.h"
 #import "RCLiveVideoDeprecatedDelegate.h"
+#import <RongRTCLib/RongRTCLib.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
