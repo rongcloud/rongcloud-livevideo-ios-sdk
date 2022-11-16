@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "RCLiveVideoLib"
-    s.version      = "2.1.3"
+    s.version      = "2.1.4"
     s.summary      = 'live video'
 
 

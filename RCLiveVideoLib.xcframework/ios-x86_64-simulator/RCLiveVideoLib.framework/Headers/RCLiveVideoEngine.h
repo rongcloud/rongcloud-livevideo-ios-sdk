@@ -25,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<RCLiveVideoMixDelegate> mixDelegate;
 @property (nonatomic, weak) id<RCLiveVideoMixDataSource> mixDataSource;
 
+/// 用户进出房间是否发送消息，默认 YES
+@property (nonatomic, assign, getter=isEnableInOutRoomEvent) BOOL enableInOutRoomEvent;
+
 @property (nonatomic, readonly, nullable) RCLiveVideoPK *pkInfo;
 
 + (instancetype)shared;
