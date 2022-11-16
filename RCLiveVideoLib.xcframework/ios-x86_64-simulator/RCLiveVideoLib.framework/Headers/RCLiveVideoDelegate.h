@@ -7,13 +7,13 @@
 
 #import "RCSProtocol.h"
 #import "RCLiveVideoDefine.h"
-#import "RCLiveVideoDeprecatedDelegate.h"
+#import "RCLiveVideoDelegate_DP_2_X.h"
 #import <RongRTCLib/RongRTCLib.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class RCMessage, RCRTCMixConfig;
-@protocol RCLiveVideoDelegate <RCSProtocol, RCLiveVideoDeprecatedDelegate>
+@protocol RCLiveVideoDelegate <RCSProtocol, RCLiveVideoDelegate_DP_2_X>
 
 @optional
 
@@ -25,11 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param value 房间信息内容
 - (void)roomInfoDidUpdate:(NSString *)key value:(NSString *)value;
 
-/// @param userId 用户进入房间
-- (void)userDidEnter:(NSString *)userId withUserCount:(NSInteger)count;
-
-/// @param userId 用户离开房间
-- (void)userDidExit:(NSString *)userId withUserCount:(NSInteger)count;
+/// 房间用户更新
+/// @param joinUserIds 加入房间用户
+/// @param exitUserIds 离开房间用户
+/// @remarks 使用此回调，需要在开发者后台打开 监听成员变化 功能
+- (void)onUserUpdateWithJoinUserIds:(NSArray<NSString *> *)joinUserIds
+                        exitUserIds:(NSArray<NSString *> *)exitUserIds;
 
 /// @param userId 用户被踢出房间
 - (void)userDidKickOut:(NSString *)userId byOperator:(NSString *)operatorId;
