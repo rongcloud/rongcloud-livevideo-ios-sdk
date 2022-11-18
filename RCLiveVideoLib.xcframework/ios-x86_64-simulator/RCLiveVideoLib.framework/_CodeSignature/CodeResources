@@ -16,6 +16,10 @@
 		<data>
 		KSqxVnMYGdDdT1SX4aumHWfRee0=
 		</data>
+		<key>Headers/RCLiveVideoDelegate_DP_2_X.h</key>
+		<data>
+		HS3zfP0vuggJ8bqIyBDmOh3T2Hg=
+		</data>
 		<key>Headers/RCLiveVideoEngine+Deprecated.h</key>
 		<data>
 		/7cE+kU7469jv+ICHJSP8ppHSsM=
@@ -26,7 +30,7 @@
 		</data>
 		<key>Headers/RCLiveVideoLib.h</key>
 		<data>
-		pCM4BG8esnEixMVutJIih03vJzE=
+		mUhNsy4GHAg5gVUwIhj6G6IBo30=
 		</data>
 		<key>Headers/RCLiveVideoPK.h</key>
 		<data>
@@ -100,6 +104,17 @@
 			z1Tyuw0BXI/3B6IN9JVWnOb6Dt4ejurLFri+x0U44T0=
 			</data>
 		</dict>
+		<key>Headers/RCLiveVideoDelegate_DP_2_X.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HS3zfP0vuggJ8bqIyBDmOh3T2Hg=
+			</data>
+			<key>hash2</key>
+			<data>
+			qvCbM/sd2UmQtwrEXTE0HTRxCdwz3gZJ1k8vIlS7C4I=
+			</data>
+		</dict>
 		<key>Headers/RCLiveVideoEngine+Deprecated.h</key>
 		<dict>
 			<key>hash</key>
@@ -126,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pCM4BG8esnEixMVutJIih03vJzE=
+			mUhNsy4GHAg5gVUwIhj6G6IBo30=
 			</data>
 			<key>hash2</key>
 			<data>
-			oztWHtuBI6Tyn9jsNQcvyKjUSDdNA8pFU0r+waN+Wkg=
+			ev43bRBaTYpA4To4TWz3ZxnC3CpeJFwYgY69SnpXBLE=
 			</data>
 		</dict>
 		<key>Headers/RCLiveVideoPK.h</key>
